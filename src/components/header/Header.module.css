@@ -1,0 +1,13 @@
+.imageClass {
+    height: 90px;
+    width: 120px;
+    margin: 0;
+    padding: 10px;
+  }
+  .bgDarkblue {
+    background-color: rgb(4, 4, 107);
+  }
+  .bgDarkblue{
+      background-color: rgb(4, 4, 44);
+  }
+  

@@ -1,0 +1,45 @@
+.bgDarkBlue {
+    background-color: rgb(4, 4, 44);
+    color: white;
+  }
+  
+  .listing {
+    justify-content: center;
+    text-align: center;
+  }
+  .listing p {
+    font-size: 15px;
+    line-height: 35px;
+    margin-top: 0;
+    margin-bottom: 0;
+    letter-spacing: 1px;
+  }
+  .listing h5 {
+    font-weight: 700;
+  }
+  .icon:hover {
+    filter: grayscale(100%);
+    color: darkred;
+  }
+  .icons li {
+    list-style-type: none;
+    padding: 5px;
+    display: inline-flex;
+    align-self: flex-start;
+  }
+  .icons li:hover {
+    font-weight: 600;
+  }
+  .rights {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(77, 75, 75);
+    color: black;
+  }
+  .links:hover {
+    text-decoration: underline;
+    color: rgb(123, 123, 167);
+    font-weight: 600;
+  }
+  

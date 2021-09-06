@@ -10,7 +10,7 @@ html {
 
 body {
   margin: 0;
-  background-color: #070d58;
+  background-color: #070d58 !important;
 }
 
 .form-div {
@@ -20,7 +20,11 @@ body {
   margin : 50px auto 50px auto;
   border : 1px solid black;
   border-radius: 5px;
-  background-color: rgb(124, 122, 122);
+  background-color: white;
+}
+
+.form-div h3 {
+    margin: 14px 0;
 }
 .app {
   width: 90%;
