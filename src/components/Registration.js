@@ -1,7 +1,6 @@
 import React, { Fragment, Component } from "react";
-// import axios from "axios";
 import "./Registration.css";
-import { Link, withRouter } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 
 class Registration extends Component {
   constructor(props) {
@@ -21,14 +20,6 @@ class Registration extends Component {
       enteredDateTouched: false,
     };
   }
-
-  //   componentDidMount() {
-  //     const url = "https://bookclubapi.ndtrain.brainvire.net/book/getbooks";
-  //     axios.get(url).then((res) => {
-  //       const persons = res.data;
-  //       this.setState({ persons });
-  //     });
-  //   }
 
   render() {
     console.log("props", this.props);
@@ -58,7 +49,6 @@ class Registration extends Component {
 
     // SetPassword Validation
     const enteredSetPasswordIsValid =
-      //   this.state.enteredPassword.trim() !== "" ||
       this.state.enteredPassword === this.state.enteredSetPassword;
     const enteredSetPasswordIsInvalid =
       !enteredSetPasswordIsValid && this.state.enteredSetPasswordTouched;
@@ -80,7 +70,6 @@ class Registration extends Component {
     const lnameInputChangeHandler = (event) => {
       this.setState({ enteredLname: event.target.value });
     };
-
     const lnameInputBlurChangeHandler = (event) => {
       this.setState({ enteredLnameTouched: true });
     };
@@ -138,17 +127,11 @@ class Registration extends Component {
     const formSubmissionHandler = (event) => {
       event.preventDefault();
       this.setState({ enteredFnameTouched: true });
-      //   this.setState({enteredLnameTouched : true});
-      //   this.setState({enteredEmailTouched : true});
 
       if (!enteredFNameIsValid) {
         return;
       }
-      console.log(this.state.enteredFname);
-      console.log(this.state.enteredLname);
-      console.log(this.state.enteredEmail);
 
-      // setEnteredFnameTouched(false);
       this.setState({
         enteredLnameTouched: false,
         enteredFnameTouched: false,
@@ -157,12 +140,6 @@ class Registration extends Component {
         enteredLname: "",
         enteredEmail: "",
       });
-      // setEnteredLnameTouched(false);
-      // setEnteredEmailTouched(false);
-
-      // setEnteredLname(''),
-      // setEnteredFname(''),
-      // setEnteredEmail('')
     };
 
     // dynamic Classes
@@ -190,9 +167,6 @@ class Registration extends Component {
       ? " form-control invalid"
       : "form-control";
 
-    // console.log("persons", this.state.persons);
-    // console.log("First Name",this.state.enteredFname);
-    console.log("Entered Date : ", this.state.enteredDate);
     return (
       <Fragment>
         <form onSubmit={formSubmissionHandler} className="form-div">
